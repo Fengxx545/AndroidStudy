@@ -1,5 +1,6 @@
 package com.study.zhaory.materialdesignstudy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -91,11 +92,13 @@ public class ToolBarActivity extends AppCompatActivity {
             }
             break;
             case R.id.delete: {
+                startActivity(new Intent(this,SettingsActivity.class));
                 Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
             }
             break;
             case R.id.settings: {
                 Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,TabedActivity.class));
             }
             break;
         }
