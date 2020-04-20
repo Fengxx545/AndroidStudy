@@ -1,1 +1,1 @@
-include ':app', ':materialdesignstudy'
+include ':app', ':materialdesignstudy', ':camera', ':databindingstudy','mvpapp2'

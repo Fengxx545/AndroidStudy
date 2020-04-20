@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+
 import com.ry.administrator.mvpapp2.R;
 import com.ry.administrator.mvpapp2.adpter.DailyAdapter;
 import com.ry.administrator.mvpapp2.bean.NewsBean;

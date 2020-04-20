@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.study.zhaory.databindingstudy.User" />
+
+        <import
+            alias="TempUser"
+            type="com.study.zhaory.databindingstudy.User" />
+
+        <variable
+            name="userInfo"
+            type="User" />
+
+        <variable
+            name="tempUserInfo"
+            type="TempUser" />
+        <!--<import type="com.study.zhaory.databindingstudy.User"/>
+        <variable
+            name="userInfo"
+            type="User"/>-->
+        <!--<variable-->
+        <!--name="userInfo"-->
+        <!--type="com.study.zhaory.databindingstudy.User" />-->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单向数据绑定" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{userInfo.name}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{userInfo.age}" />
+
+    </LinearLayout>
+</layout>
